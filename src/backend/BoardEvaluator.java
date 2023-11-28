@@ -122,8 +122,8 @@ public class BoardEvaluator
 			return true;
 		}
 		else if(board[0][2] == currentPlayer.getMarkType() &&
-				board[1][1] == currentPlayer.getMarkType() &&
-				board[2][0] == currentPlayer.getMarkType())
+			    board[1][1] == currentPlayer.getMarkType() &&
+			    board[2][0] == currentPlayer.getMarkType())
 		{
 			winningBoxes[0] = new WinningBox(0, 2);
 			winningBoxes[1] = new WinningBox(1, 1);
