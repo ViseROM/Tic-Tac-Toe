@@ -45,11 +45,11 @@ public class GamePanel extends JPanel implements Runnable
 	{
 		super();
 		this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
-        this.setFocusable(true);
-        this.requestFocus();
-        
-        stateManager = StateManager.instance();
-        mouseManager = MouseManager.instance();
+		this.setFocusable(true);
+		this.requestFocus();
+		
+		stateManager = StateManager.instance();
+		mouseManager = MouseManager.instance();
 	}
 	
 	public void addNotify()
@@ -162,9 +162,8 @@ public class GamePanel extends JPanel implements Runnable
 	private void drawToScreen()
 	{
 		//Double buffering
-        Graphics g2 = this.getGraphics();
-        g2.drawImage(image, 0, 0, null);
-        g2.dispose();
+		Graphics g2 = this.getGraphics();
+		g2.drawImage(image, 0, 0, null);
+		g2.dispose();
 	}
-	
 }
