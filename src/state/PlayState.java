@@ -201,7 +201,7 @@ public class PlayState extends State
 	{	
 		updateTransition();
 		
-		//Do not do certain updates if the fadeToBlack transition is happening
+		//Do not do certain updates if the transition is happening
 		if(currentTransition != null && currentTransition.isRunning())
 		{
 			return;
